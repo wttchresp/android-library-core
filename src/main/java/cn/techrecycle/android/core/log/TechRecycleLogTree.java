@@ -27,12 +27,14 @@ public class TechRecycleLogTree extends Timber.Tree {
   @Override
   protected void log(int priority, @Nullable String tag, @NotNull String message,
       @Nullable Throwable t) {
-    String logTag = Optional.ofNullable(tag).orElse(this.tag);
+    String logTag = tag == null ? this.tag : tag;
     if (priority == Log.ASSERT) {
       Log.wtf(logTag, message);
     } else {
       Log.println(priority, logTag, message);
     }
-    Optional.ofNullable(t).ifPresent(e -> Log.w(tag, e));
+    if (t != null) {
+      Log.w(tag, t);
+    }
   }
 }
