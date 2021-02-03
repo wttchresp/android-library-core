@@ -16,6 +16,11 @@ public class BitmapUtils {
    * 将 bitmap 保存到指定路径位置
    */
   public static boolean saveToFile(Bitmap bitmap, String fileName, Bitmap.CompressFormat format) {
+    return saveToFile(bitmap, fileName, format, 100);
+  }
+
+  public static boolean saveToFile(Bitmap bitmap, String fileName,
+      Bitmap.CompressFormat format, int quality) {
     if (bitmap == null || StringUtils.isEmpty(fileName)) {
       return false;
     }
