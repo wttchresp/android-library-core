@@ -1,7 +1,7 @@
-package cn.techrecycle.android.core;
+package com.wttch.android.core;
 
 import android.app.Application;
-import cn.techrecycle.android.core.log.TechRecycleLogTree;
+import com.wttch.android.core.log.TechRecycleLogTree;
 import com.blankj.utilcode.util.CrashUtils;
 import com.blankj.utilcode.util.CrashUtils.CrashInfo;
 import com.blankj.utilcode.util.CrashUtils.OnCrashListener;
