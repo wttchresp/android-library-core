@@ -1,9 +1,9 @@
-package cn.techrecycle.android.supports
+package com.wttch.android.supports
 
 import android.graphics.Bitmap
 import android.graphics.Rect
 import androidx.core.util.Consumer
-import cn.techrecycle.android.util.BitmapUtils
+import com.wttch.android.util.BitmapUtils
 
 fun Bitmap.saveTo(fileName: String, format: Bitmap.CompressFormat, callback: Consumer<Boolean>) {
   BitmapUtils.saveToFile(this, fileName, format, callback)

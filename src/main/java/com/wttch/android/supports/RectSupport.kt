@@ -1,4 +1,4 @@
-package cn.techrecycle.android.supports
+package com.wttch.android.supports
 
 import android.graphics.Rect
 

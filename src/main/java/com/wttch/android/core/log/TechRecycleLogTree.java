@@ -1,8 +1,7 @@
-package cn.techrecycle.android.core.log;
+package com.wttch.android.core.log;
 
 import android.annotation.SuppressLint;
 import android.util.Log;
-import java.util.Optional;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import timber.log.Timber;
