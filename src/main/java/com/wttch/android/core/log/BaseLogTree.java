@@ -9,16 +9,16 @@ import timber.log.Timber;
 /**
  * 自定义 Timer, 不用每次 log 都添加 tag，如果未指定 tag 则使用默认的 tag:{@code DEFAULT_TAG}
  */
-public class TechRecycleLogTree extends Timber.Tree {
+public class BaseLogTree extends Timber.Tree {
 
-  public static final String DEFAULT_TAG = "tech-recycle";
+  public static final String DEFAULT_TAG = "Log-Tree";
   private final String tag;
 
-  public TechRecycleLogTree() {
+  public BaseLogTree() {
     this(DEFAULT_TAG);
   }
 
-  public TechRecycleLogTree(String tag) {
+  public BaseLogTree(String tag) {
     this.tag = tag;
   }
 

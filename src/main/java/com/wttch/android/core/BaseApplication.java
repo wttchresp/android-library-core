@@ -1,10 +1,10 @@
 package com.wttch.android.core;
 
 import android.app.Application;
-import com.wttch.android.core.log.TechRecycleLogTree;
 import com.blankj.utilcode.util.CrashUtils;
 import com.blankj.utilcode.util.CrashUtils.CrashInfo;
 import com.blankj.utilcode.util.CrashUtils.OnCrashListener;
+import com.wttch.android.core.log.BaseLogTree;
 import timber.log.Timber;
 
 public abstract class BaseApplication extends Application implements OnCrashListener {
@@ -14,7 +14,7 @@ public abstract class BaseApplication extends Application implements OnCrashList
   @Override
   public void onCreate() {
     super.onCreate();
-    Timber.plant(new TechRecycleLogTree(defaultLogTag()));
+    Timber.plant(new BaseLogTree(defaultLogTag()));
     CrashUtils.init(this);
   }
 
