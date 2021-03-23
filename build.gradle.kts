@@ -43,18 +43,11 @@ dependencies {
   implementation("androidx.core:core-ktx:1.3.2")
   implementation("androidx.appcompat:appcompat:1.2.0")
   implementation("com.google.android.material:material:1.2.1")
-  testImplementation("junit:junit:4.+")
+  testImplementation("junit:junit:4.13.1")
   androidTestImplementation("androidx.test.ext:junit:1.1.2")
   androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
   api("com.jakewharton.timber:timber:4.7.1")
   // android-util-code
   implementation("com.blankj:utilcodex:1.30.4")
-
-  // CameraX core library using camera2 implementation
-  implementation("androidx.camera:camera-camera2:1.0.0-beta12")
-  // CameraX Lifecycle Library
-  implementation("androidx.camera:camera-lifecycle:1.0.0-beta12")
-  // CameraX View class
-  implementation("androidx.camera:camera-view:1.0.0-alpha19")
 }

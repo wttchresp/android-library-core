@@ -1,4 +1,4 @@
-package cn.techrecycle.android.core;
+package com.wttch.android.core;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

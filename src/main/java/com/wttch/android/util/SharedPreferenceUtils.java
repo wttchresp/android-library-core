@@ -1,4 +1,4 @@
-package cn.techrecycle.android.util;
+package com.wttch.android.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
