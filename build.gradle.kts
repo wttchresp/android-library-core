@@ -48,6 +48,7 @@ dependencies {
   androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
   api("com.jakewharton.timber:timber:4.7.1")
+  api(project(":java-library-core"))
   // android-util-code
   implementation("com.blankj:utilcodex:1.30.4")
 }
